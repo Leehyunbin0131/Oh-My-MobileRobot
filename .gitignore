@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.bak
+*.tmp
+*.log
+.venv/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.gcode
+*.gcode.3mf
+local/

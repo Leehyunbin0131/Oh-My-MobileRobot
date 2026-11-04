@@ -1,0 +1,66 @@
+# Oh My MobileRobot
+
+[한국어](README.md) · **English**
+
+## Overview
+
+Oh My MobileRobot is a mobile robot hardware project with a 2020 aluminum extrusion frame, drive wheels, rear casters, and 3D printed deck panels, covers, and sensor mounts.
+
+This repository provides exterior models of the base and application concepts, part design files, printable STLs, and drawings. Component placement, mounting methods, and upper modules can be adapted around the base frame to suit the application.
+
+## Base platform
+
+<p align="center">
+  <img src="docs/images/robot-overview.png" alt="Mobile robot base without raised corner posts above the deck" width="600"><br>
+  <sub>Rendered from the exterior CAD model</sub>
+</p>
+
+The frame consists of upper and lower rectangular frames joined by vertical corner members. The central upper cross rail carries the LiDAR mount. The base has no raised posts at the four deck corners.
+
+### Base specifications
+
+| Item | Specification |
+| --- | --- |
+| Frame envelope | **440 × 400 × 140 mm**, including extrusions; drawing coordinates X × Y × Z |
+| Frame members | 2020 aluminum extrusions, 20 × 20 mm section |
+| Drive wheels | Two, left and right near the front |
+| Rear support | Two casters |
+| Exterior panels | Four deck quadrants and split side covers |
+
+## Hardware configuration
+
+| Group | Components | Placement and role |
+| --- | --- | --- |
+| Drive and support | DFRobot KIT0085, metal motor brackets, rear casters | Drive-wheel mounting and base support |
+| Range and depth sensors | RPLIDAR A2M12, RealSense D435i | Range measurement and depth imaging |
+| Computing and control | Jetson Orin Nano Super, Arduino Mega 2560, NT-S-DCDM1210 | Main computer, microcontroller, and motor driver |
+| IMU | HFI-A9 | Inertial measurement |
+| Power conversion | SZH-EKBD-058, LTC3780 SZH-EK334 | DC-DC power conversion |
+
+The mechanical structure combines the extrusion frame with split covers and sensor brackets. The electronics use two tray levels joined by metal PCB standoffs.
+
+## Application concepts
+
+The three concepts combine application modules with a **shared third-level platform supported by four posts above the LiDAR deck**.
+
+| Cargo carrier | Six-axis robot arm | Information display |
+| :---: | :---: | :---: |
+| ![Cargo carrier concept](docs/images/application-cargo.png) | ![Robot arm concept](docs/images/application-arm.png) | ![Information display concept](docs/images/application-display.png) |
+| Extrusion rim and sheet-panel cargo space | Industrial-style six-axis arm with a two-finger gripper | A guidance screen on an extrusion mast |
+
+See the [complete model document](docs/full-model.en.md#application-concepts) for post and upper-frame construction and layout dimensions.
+
+## Design resources
+
+| Document | Contents |
+| --- | --- |
+| [Complete model structure and layout](docs/full-model.en.md) | Exterior views, coordinate system, component positions, and extension structures |
+| [Design file index](docs/parts.en.md) | Part SolidCraft, STEP, STL, and drawing downloads, plus source file contents |
+| [Printed part design specifications](docs/design.en.md) | Panel dimensions, mounting holes, fasteners, and electronics tray layout |
+| [Purchased component specifications](docs/components.en.md) | Purchased component models, quantities, and product dimensions |
+| [Printing instructions](docs/printing.en.md) | STL orientations, fit coupon usage, and PDF print settings |
+| [Design references](docs/references.md) | Manufacturer data, product drawings, and project dimension sources |
+
+## License
+
+Original CAD, printable geometry, drawings, and documentation are available under [CERN-OHL-P-2.0](LICENSE). See [NOTICE](NOTICE.md) for attribution and scope.
