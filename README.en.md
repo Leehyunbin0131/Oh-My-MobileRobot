@@ -1,10 +1,28 @@
-# Oh My MobileRobot
+<p align="center">
+  <img src="docs/images/robot-lineup.png" alt="CAD renderings of the mobile robot base, cargo carrier, arm, and display variants" width="960">
+</p>
 
-[한국어](README.md) · **English**
+<h1 align="center">Oh My MobileRobot</h1>
 
-## Overview
+<p align="center">
+  <em>A mobile robot base and extension modules.</em>
+</p>
 
-Oh My MobileRobot is a mobile robot hardware project with a 2020 aluminum extrusion frame, drive wheels, rear casters, and 3D printed deck panels, covers, and sensor mounts.
+<p align="center">
+  <a href="docs/full-model.en.md">Full model</a> ·
+  <a href="docs/parts.en.md">CAD · STL</a> ·
+  <a href="docs/ros.en.md">ROS · ROS 2</a> ·
+  <a href="docs/design.en.md">Design specifications</a> ·
+  <a href="docs/components.en.md">Components</a>
+</p>
+
+<p align="center">
+  <a href="README.md">한국어</a> · <strong>English</strong>
+</p>
+
+---
+
+**Oh My MobileRobot** is a mobile robot hardware project with a 2020 aluminum extrusion frame, drive wheels, rear casters, and 3D printed deck panels, covers, and sensor mounts.
 
 This repository provides CAD and ROS models of the base and application concepts, part design files, printable STLs, and drawings. Component placement, mounting methods, and upper modules can be adapted around the base frame to suit the application.
 

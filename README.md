@@ -1,10 +1,28 @@
-# Oh My MobileRobot
+<p align="center">
+  <img src="docs/images/robot-lineup.png" alt="기본 베이스, 적재함형, 로봇암형, 디스플레이형 모바일 로봇의 CAD 렌더링" width="960">
+</p>
 
-**한국어** · [English](README.en.md)
+<h1 align="center">Oh My MobileRobot</h1>
 
-## 개요
+<p align="center">
+  <em>모바일 로봇 베이스와 확장 모듈.</em>
+</p>
 
-Oh My MobileRobot은 2020 알루미늄 프로파일 프레임에 구동 바퀴·후방 캐스터와 3D 프린팅 상판·커버·센서 고정부를 결합한 모바일 로봇 하드웨어 프로젝트입니다.
+<p align="center">
+  <a href="docs/full-model.ko.md">전체 형상</a> ·
+  <a href="docs/parts.ko.md">CAD · STL</a> ·
+  <a href="docs/ros.ko.md">ROS · ROS 2</a> ·
+  <a href="docs/design.ko.md">설계 규격</a> ·
+  <a href="docs/components.ko.md">구매 부품</a>
+</p>
+
+<p align="center">
+  <strong>한국어</strong> · <a href="README.en.md">English</a>
+</p>
+
+---
+
+**Oh My MobileRobot**은 2020 알루미늄 프로파일 프레임에 구동 바퀴·후방 캐스터와 3D 프린팅 상판·커버·센서 고정부를 결합한 모바일 로봇 하드웨어 프로젝트입니다.
 
 저장소는 기본 베이스와 확장 예시의 CAD·ROS 모델, 부품별 설계 파일, 출력용 STL과 도면을 제공합니다. 베이스 프레임을 기준으로 부품 배치·체결 방식·상부 모듈을 용도에 맞게 변경해 사용할 수 있습니다.
 
