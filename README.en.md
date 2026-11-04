@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="#completed-robot">Photos</a> ·
   <a href="docs/full-model.en.md">Full model</a> ·
   <a href="docs/parts.en.md">CAD · STL</a> ·
   <a href="docs/ros.en.md">ROS · ROS 2</a> ·
@@ -25,6 +26,19 @@
 **Oh My MobileRobot** is a mobile robot hardware project with a 2020 aluminum extrusion frame, drive wheels, rear casters, and 3D printed deck panels, covers, and sensor mounts.
 
 This repository provides CAD and ROS models of the base and application concepts, part design files, printable STLs, and drawings. Component placement, mounting methods, and upper modules can be adapted around the base frame to suit the application.
+
+<a id="completed-robot"></a>
+
+## Completed robot
+
+<p align="center">
+  <img src="docs/images/photos/completed-front.jpg" alt="Front photograph of the completed robot with the LiDAR on the deck and the camera in the front panel" width="600"><br>
+  <sub>Front view of the completed base</sub>
+</p>
+
+| Front perspective | Side and top deck |
+| :---: | :---: |
+| ![Front perspective photograph of the completed robot](docs/images/photos/completed-angle.jpg) | ![Side and top-deck photograph of the completed robot](docs/images/photos/completed-side.jpg) |
 
 ## Base platform
 

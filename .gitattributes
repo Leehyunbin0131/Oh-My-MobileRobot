@@ -16,3 +16,5 @@ CMakeLists.txt text eol=lf
 *.step binary
 *.pdf binary
 *.png binary
+*.jpg binary
+*.jpeg binary

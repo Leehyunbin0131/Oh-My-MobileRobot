@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="#completed-robot">완성 사진</a> ·
   <a href="docs/full-model.ko.md">전체 형상</a> ·
   <a href="docs/parts.ko.md">CAD · STL</a> ·
   <a href="docs/ros.ko.md">ROS · ROS 2</a> ·
@@ -25,6 +26,19 @@
 **Oh My MobileRobot**은 2020 알루미늄 프로파일 프레임에 구동 바퀴·후방 캐스터와 3D 프린팅 상판·커버·센서 고정부를 결합한 모바일 로봇 하드웨어 프로젝트입니다.
 
 저장소는 기본 베이스와 확장 예시의 CAD·ROS 모델, 부품별 설계 파일, 출력용 STL과 도면을 제공합니다. 베이스 프레임을 기준으로 부품 배치·체결 방식·상부 모듈을 용도에 맞게 변경해 사용할 수 있습니다.
+
+<a id="completed-robot"></a>
+
+## 실제 완성 모습
+
+<p align="center">
+  <img src="docs/images/photos/completed-front.jpg" alt="상판에 라이다와 전면에 카메라가 장착된 완성 로봇의 전면 사진" width="600"><br>
+  <sub>완성된 기본 베이스의 전면</sub>
+</p>
+
+| 전면 사시 | 측면·상판 |
+| :---: | :---: |
+| ![완성 로봇의 전면 사시 사진](docs/images/photos/completed-angle.jpg) | ![완성 로봇의 측면과 상판 사진](docs/images/photos/completed-side.jpg) |
 
 ## 기본 베이스
 
