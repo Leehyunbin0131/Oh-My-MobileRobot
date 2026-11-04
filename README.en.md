@@ -40,6 +40,8 @@ This repository provides CAD and ROS models of the base and application concepts
 | :---: | :---: |
 | ![Front perspective photograph of the completed robot](docs/images/photos/completed-angle.jpg) | ![Side and top-deck photograph of the completed robot](docs/images/photos/completed-side.jpg) |
 
+The photographs show the earlier deck with round holes. The current design files use T-nut insertion keyholes and 16 frame fasteners.
+
 ## Base platform
 
 <p align="center">

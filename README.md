@@ -40,6 +40,8 @@
 | :---: | :---: |
 | ![완성 로봇의 전면 사시 사진](docs/images/photos/completed-angle.jpg) | ![완성 로봇의 측면과 상판 사진](docs/images/photos/completed-side.jpg) |
 
+사진은 기존 원형 홀 상판이며, 현재 설계 파일은 T너트 삽입 키홀과 프레임 체결 16개를 적용한 상판입니다.
+
 ## 기본 베이스
 
 <p align="center">

@@ -17,7 +17,9 @@ This document covers printed geometry, mounting holes, fasteners, and electronic
 | Skin and ribs | 1 mm skin, 2 mm underside ribs |
 | Central reinforcement | Combined 120 × 80 area; up to 7 thick |
 | Central rail channel | 20.4 wide; 0.2 clearance on each side of the 2020 rail |
-| Frame fasteners | Ø4.5; 24 sets of M4 × 8 bolts and M4 hammer T-nuts |
+| Frame fasteners | 16 M4 × 8 bolt / M4 hammer T-nut sets: three perimeter anchors per panel and four shared center anchors |
+| T-nut keyholes | 14 × 8 entry, R1; 4.5 throat width; 15 from entry center to fastening center |
+| Reference T-nut envelope | 10 × 6 × 3.5; hammer type compatible with the extrusion slot |
 | A2M12 fasteners | Four M3 × 6 flat-underhead screws, inserted from below |
 | LiDAR holes | Ø3.4; underside head recess Ø6.5 × 4 deep; 3 mm bearing thickness |
 | LiDAR hole pattern | Center (220,200), radius 29.5, starting at 45° with 90° spacing |
@@ -29,7 +31,9 @@ This document covers printed geometry, mounting holes, fasteners, and electronic
 | XT60 surrounding land | 3 thick; minimum 9 clearance from perimeter frame rails |
 | LiDAR cable opening | Center (220,146), 14 × 22, R2 |
 
-The four panels carry the central reinforcement directly; there is no separate central saddle. The central mount fastens to the 2020 extrusion. The 60 mm posts in the deck drawing are a reference configuration for the corner interfaces. See the [complete model](full-model.en.md#base-platform) for the base and extension post configurations.
+The four panels carry the central reinforcement directly; there is no separate central saddle. Four anchors fasten to the center rail. Each central keyhole and bolt head spans the adjoining front and rear panels. See the [complete model](full-model.en.md#base-platform) for the base and extension post configurations.
+
+Insert a hammer T-nut loosely threaded onto its bolt through the wide entry from above and turn it into the extrusion slot. Keep the panels in position, slide the bolt and nut 15 along the slot to the narrow fastening end, then tighten. The bearing land is 3 thick. The entry remains open after fastening.
 
 The XT60 openings are for passing standard XT60/XT60H cable connectors lengthwise. The vertical clearance envelope verified in CAD has an 18 × 11 cross section.
 
