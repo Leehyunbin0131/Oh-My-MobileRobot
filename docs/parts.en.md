@@ -2,7 +2,7 @@
 
 [Overall view](../README.en.md) · [한국어](parts.ko.md) · [Dimensions and fasteners](design.en.md) · [Print orientations](printing.en.md)
 
-This index covers downloads and source file contents. See [printed part design specifications](design.en.md) for dimensions and mounting interfaces, and [printing instructions](printing.en.md) for output settings.
+This index covers CAD, printing, and ROS downloads and source file contents. See [printed part design specifications](design.en.md) for dimensions and mounting interfaces, [printing instructions](printing.en.md) for output settings, and [ROS model usage](ros.en.md) for running the models.
 
 <a id="printed-parts"></a>
 
@@ -37,6 +37,26 @@ See [complete model and application concepts](full-model.en.md) for each model's
 | Six-axis robot arm concept | <sub>[SolidCraft](../hardware/application-examples/arm-concept.sc) · [STEP](../hardware/application-examples/arm-concept.step)</sub> |
 | Information display concept | <sub>[SolidCraft](../hardware/application-examples/display-concept.sc) · [STEP](../hardware/application-examples/display-concept.step)</sub> |
 
+<a id="ros-models"></a>
+
+## ROS model files
+
+Download the complete [oh_my_mobilerobot_description package](../ros/oh_my_mobilerobot_description). Its URDFs reference meshes inside the package.
+
+| File | Contents |
+| --- | --- |
+| [Base platform](../ros/oh_my_mobilerobot_description/urdf/base.urdf) | `base` URDF |
+| [Cargo carrier](../ros/oh_my_mobilerobot_description/urdf/cargo.urdf) | `cargo` URDF |
+| [Robot arm](../ros/oh_my_mobilerobot_description/urdf/arm.urdf) | `arm` URDF |
+| [Information display](../ros/oh_my_mobilerobot_description/urdf/display.urdf) | `display` URDF |
+| [Common Xacro](../ros/oh_my_mobilerobot_description/urdf/oh_my_mobilerobot.urdf.xacro) | Model selection and link/joint name prefix |
+| [Visual meshes](../ros/oh_my_mobilerobot_description/meshes/visual) | Metre-scale STLs in link coordinates |
+| [Launch files](../ros/oh_my_mobilerobot_description/launch) · [RViz configurations](../ros/oh_my_mobilerobot_description/rviz) | ROS 1 and ROS 2 display settings |
+| [CAD mapping](../ros/oh_my_mobilerobot_description/config/cad_mapping.json) · [Mesh manifest](../ros/oh_my_mobilerobot_description/config/mesh_manifest.json) | Source mapping, coordinates, colors, SHA-256 hashes, and bounds |
+| [Conversion tool](../tools/generate_ros_description.py) · [Checks](../tests/test_ros_description.py) | CAD-based regeneration and model checks |
+
+See [ROS model usage](ros.en.md) for building, launching, frames, and customization.
+
 <a id="file-formats"></a>
 
 ## File formats and selection
@@ -45,7 +65,9 @@ See [complete model and application concepts](full-model.en.md) for each model's
 | --- | --- |
 | `.sc` | Editable SolidCraft source |
 | `.step` | Solid geometry for exchange between CAD programs |
-| `.stl` | Individual part print mesh |
+| `.stl` | `hardware/**/print/`: print meshes (mm); `ros/**/meshes/visual/`: visual meshes (m) |
 | `.pdf` | Part and layout drawings |
+| `.urdf` | ROS link, joint, visual, and collision definitions |
+| `.xacro` | Common URDF source with model selection and a name prefix |
 
-Use the STLs in each part's `print/` folder for printing. Hidden reference boards and extrusions in CAD sources are not printable parts. Complete exterior and application models are available as SolidCraft and STEP files. Units and scale are covered in [printing instructions](printing.en.md).
+Use the STLs in each part's `print/` folder for printing. Hidden reference boards and extrusions in CAD sources are not printable parts. Complete exterior and application models are available as SolidCraft and STEP for CAD editing and exchange and URDF and Xacro for ROS. Print units and scale are covered in [printing instructions](printing.en.md); ROS units and coordinates are in the [ROS document](ros.en.md#frames).

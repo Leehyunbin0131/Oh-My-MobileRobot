@@ -1,6 +1,6 @@
 # Purchased component specifications
 
-[English README](../README.en.md) · [한국어](components.ko.md) · [Design references](references.md)
+[English README](../README.en.md) · [한국어](components.ko.md) · [Design references](references.md) · [ROS models](ros.en.md)
 
 This document covers purchased component models, quantities, and product specifications. Dimensions are in mm. Frame mounting positions are in the [complete model layout](full-model.en.md#layout); board mounting holes and tray placement are in [printed part design specifications](design.en.md#electronics-trays).
 

@@ -23,3 +23,18 @@ This page identifies manufacturer data, product drawings, project measurements, 
 | 해머형 T너트 / Hammer T-nut | 프로젝트 설계 참고 외형 / Project design reference envelope | 측면 판 키홀의 기준 외형 / Reference envelope for side-panel keyholes |
 
 출력 부품의 치수에는 제품 규격, 사용자 실측, 설계 여유가 구분되어 있습니다. / Printed part dimensions distinguish product specifications, user measurements, and design clearances.
+
+<a id="ros-references"></a>
+
+## ROS 모델 자료 / ROS model references
+
+ROS 모델의 사용법과 프로젝트 좌표 변환은 [한국어](ros.ko.md) / [English](ros.en.md)에 있습니다. / Usage and project coordinate conversion are documented in the linked ROS pages.
+
+| 대상 / Item | 출처 / Source | 적용 항목 / Scope |
+| --- | --- | --- |
+| 단위·좌표축 / Units and axes | [REP-103](https://github.com/ros-infrastructure/rep/blob/master/rep-0103.rst) | SI 단위·로봇 축·광학 프레임 / SI units, robot axes, optical frames |
+| 패키지 형식 / Package format | [REP-149](https://github.com/ros-infrastructure/rep/blob/master/rep-0149.rst) | format 3, ROS_VERSION 조건부 의존성과 빌드 방식 / Conditional dependencies and build types |
+| TF 발행 / TF publication | [robot_state_publisher](https://github.com/ros/robot_state_publisher) | URDF·관절 상태와 링크 변환 / URDF, joint states, and link transforms |
+| 표시용 관절 상태 / Display joint states | [joint_state_publisher](https://github.com/ros/joint_state_publisher) | GUI·기본 관절 상태 / GUI and default joint states |
+| URDF 매개변수화 / URDF parameters | [xacro](https://github.com/ros/xacro) | 공통 모델·모델 선택·이름 접두사 / Common description, variants, and name prefix |
+| 형상 출처 / Geometry sources | [CAD 매핑 / CAD mapping](../ros/oh_my_mobilerobot_description/config/cad_mapping.json) · [메시 명세 / Mesh manifest](../ros/oh_my_mobilerobot_description/config/mesh_manifest.json) | 저장소 CAD에서 추출한 바디·원본 SHA-256 / Bodies derived from repository CAD and source SHA-256 |

@@ -1,0 +1,998 @@
+{
+  "units": "metres",
+  "package": "oh_my_mobilerobot_description",
+  "sources": {
+    "base": {
+      "cad": "hardware/assembly/full-robot-reference.sc",
+      "sha256": "0ed8a816195e47ae75184abbebaf57193d3e6c18887489a9d5b58b1c44537c91",
+      "visible_bodies": 167,
+      "mesh_bbox_max_error_mm": 0.00683135246930533,
+      "bbox_cad_mm": {
+        "min": [
+          -32.00000000000001,
+          -8.0,
+          -101.0
+        ],
+        "max": [
+          472.0,
+          439.74999999999994,
+          184.00000000000009
+        ]
+      }
+    },
+    "cargo": {
+      "cad": "hardware/application-examples/cargo-concept.sc",
+      "sha256": "1dc0ea74280b8eb0d35d92272d19d66f051d38334c8c98507c3f30334c2ba708",
+      "visible_bodies": 217,
+      "mesh_bbox_max_error_mm": 0.00683135246930533,
+      "bbox_cad_mm": {
+        "min": [
+          -32.00000000000001,
+          -8.0,
+          -101.0
+        ],
+        "max": [
+          472.0,
+          439.74999999999994,
+          433.0000000000002
+        ]
+      }
+    },
+    "arm": {
+      "cad": "hardware/application-examples/arm-concept.sc",
+      "sha256": "7192df28da018226dda480329fba68a61537401e7f880226382a96eb07e0bb04",
+      "visible_bodies": 230,
+      "mesh_bbox_max_error_mm": 0.020688141448829356,
+      "bbox_cad_mm": {
+        "min": [
+          -32.00000000000001,
+          -8.0,
+          -101.0
+        ],
+        "max": [
+          472.0,
+          439.74999999999994,
+          682.0793820760351
+        ]
+      }
+    },
+    "display": {
+      "cad": "hardware/application-examples/display-concept.sc",
+      "sha256": "faad1d4c13be60d22cee6dd6e33fedeaf2be859b6cde508a45525f12aeffae9d",
+      "visible_bodies": 223,
+      "mesh_bbox_max_error_mm": 0.00683135246930533,
+      "bbox_cad_mm": {
+        "min": [
+          -32.00000000000001,
+          -8.0,
+          -101.0
+        ],
+        "max": [
+          472.0,
+          439.74999999999994,
+          676.5925826289068
+        ]
+      }
+    }
+  },
+  "cad_to_ros": {
+    "cad_origin_mm": [
+      220,
+      60,
+      0
+    ],
+    "rotation_rpy_rad": [
+      0,
+      0,
+      1.5707963267948966
+    ],
+    "scale": 0.001,
+    "base_footprint_offset_m": 0.101
+  },
+  "frames_cad_mm": {
+    "base_link": [
+      220,
+      60,
+      0
+    ],
+    "left_wheel_link": [
+      460,
+      60,
+      -33
+    ],
+    "right_wheel_link": [
+      -20,
+      60,
+      -33
+    ],
+    "left_caster_swivel_link": [
+      375,
+      367.75,
+      0
+    ],
+    "right_caster_swivel_link": [
+      65,
+      367.75,
+      0
+    ],
+    "left_caster_wheel_link": [
+      375,
+      401.75,
+      -63
+    ],
+    "right_caster_wheel_link": [
+      65,
+      401.75,
+      -63
+    ],
+    "lidar_link": [
+      220,
+      200,
+      143
+    ],
+    "laser_frame": [
+      220,
+      200,
+      173.3
+    ],
+    "camera_link": [
+      220,
+      -5.05,
+      103.5
+    ],
+    "module_link": [
+      220,
+      200,
+      143
+    ]
+  },
+  "wheel_geometry_m": {
+    "drive_radius": 0.068,
+    "drive_width": 0.024,
+    "caster_radius": 0.038,
+    "caster_width": 0.033
+  },
+  "materials": {
+    "cover": "#59616B",
+    "deck": "#626C76",
+    "metal": "#BBC2C8",
+    "bracket": "#7E8993",
+    "fastener": "#C3CAD0",
+    "rubber": "#363D45",
+    "hub": "#8C98A2",
+    "sensor": "#53606C",
+    "optic": "#344652",
+    "joint": "#434E59",
+    "arm": "#BCC3C8",
+    "accent": "#768994",
+    "display": "#45515D",
+    "screen": "#354957",
+    "screen_card": "#657984",
+    "screen_text": "#E1E7EB"
+  },
+  "meshes": {
+    "arm_module": {
+      "accent": {
+        "path": "meshes/visual/arm_module/accent.stl",
+        "triangles": 12,
+        "sha256": "c10ca9dbae874d4879acc425f803da04c581b8285da982240533aac692e61596",
+        "bbox_m": {
+          "min": [
+            -0.13369346012203626,
+            0.05,
+            0.3333654307715062
+          ],
+          "max": [
+            -0.07336915582914935,
+            0.051500000000000004,
+            0.4275004065917813
+          ]
+        }
+      },
+      "arm": {
+        "path": "meshes/visual/arm_module/arm.stl",
+        "triangles": 23020,
+        "sha256": "270467ad4a752bbd95e198896d6d50731f8806d5a2d3ab3b8a242fe5817ae89a",
+        "bbox_m": {
+          "min": [
+            -0.17098567557835714,
+            -0.08399968881166675,
+            0.222
+          ],
+          "max": [
+            0.08922336286923657,
+            0.050000000000000114,
+            0.539079382076035
+          ]
+        }
+      },
+      "bracket": {
+        "path": "meshes/visual/arm_module/bracket.stl",
+        "triangles": 2080,
+        "sha256": "8e17451c4b452fda818d89081c37ae6ecb374e979a3892ffb3201c233fba481a",
+        "bbox_m": {
+          "min": [
+            -0.20200000000000018,
+            -0.22,
+            0.0
+          ],
+          "max": [
+            0.202,
+            0.22,
+            0.197
+          ]
+        }
+      },
+      "deck": {
+        "path": "meshes/visual/arm_module/deck.stl",
+        "triangles": 556,
+        "sha256": "a5a5d0f4ca86740aaaa1906550076260dcc77c71b459a0a6b4d978da9857f8c4",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            0.19699999999999984
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.20000000000000012
+          ]
+        }
+      },
+      "fastener": {
+        "path": "meshes/visual/arm_module/fastener.stl",
+        "triangles": 92320,
+        "sha256": "93331330b8262560585f90950c213bf608758e4b312d722acecce36a2209c5e7",
+        "bbox_m": {
+          "min": [
+            -0.20440000000000028,
+            -0.21375,
+            0.0029999999999999146
+          ],
+          "max": [
+            0.2044,
+            0.21375000000000005,
+            0.21300000000000016
+          ]
+        }
+      },
+      "joint": {
+        "path": "meshes/visual/arm_module/joint.stl",
+        "triangles": 13536,
+        "sha256": "8c22e63d4a68a29fff382922f85fa9b36ffe7729c3bf57e97d2622a42555891a",
+        "bbox_m": {
+          "min": [
+            -0.16799496126175104,
+            -0.092,
+            0.1999999999999998
+          ],
+          "max": [
+            0.09777772148222771,
+            0.06400000000000011,
+            0.5350794895410723
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/arm_module/metal.stl",
+        "triangles": 14144,
+        "sha256": "7a48496e308fc37746db1249871d41aae32fd765218186d79c88634291a4019b",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            -0.0030000000000000855
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.4793523475798032
+          ]
+        }
+      }
+    },
+    "base_link": {
+      "bracket": {
+        "path": "meshes/visual/base_link/bracket.stl",
+        "triangles": 7252,
+        "sha256": "714d381337e2dddb5fd601042d509ed86f5d693afa32e3617f5fac543230aa0e",
+        "bbox_m": {
+          "min": [
+            -0.025,
+            -0.223,
+            -0.054
+          ],
+          "max": [
+            0.040000000000000015,
+            0.22300000000000028,
+            0.14000000000000004
+          ]
+        }
+      },
+      "cover": {
+        "path": "meshes/visual/base_link/cover.stl",
+        "triangles": 16508,
+        "sha256": "f4f79fc29401a07c03a108886aaba19db31a931c9612d878d16d70258c5265fe",
+        "bbox_m": {
+          "min": [
+            -0.34300000000000025,
+            -0.223,
+            -3.132189277826091e-17
+          ],
+          "max": [
+            0.06300000000000003,
+            0.22300000000000023,
+            0.14000000000000004
+          ]
+        }
+      },
+      "deck": {
+        "path": "meshes/visual/base_link/deck.stl",
+        "triangles": 12008,
+        "sha256": "b4a2d1accc2a29f61d72fd30cc30a24d2691958ef085d78ffeb8caab403b7224",
+        "bbox_m": {
+          "min": [
+            -0.34,
+            -0.22,
+            0.13599999999999923
+          ],
+          "max": [
+            0.06,
+            0.22,
+            0.14300000000000002
+          ]
+        }
+      },
+      "fastener": {
+        "path": "meshes/visual/base_link/fastener.stl",
+        "triangles": 281736,
+        "sha256": "cba992f3fc053237eb3d9b461e037037aeb20c5cab2f3308eb4ac538d62e5454",
+        "bbox_m": {
+          "min": [
+            -0.3375000000000001,
+            -0.215,
+            -0.007500000000000005
+          ],
+          "max": [
+            0.055,
+            0.215,
+            0.146
+          ]
+        }
+      },
+      "joint": {
+        "path": "meshes/visual/base_link/joint.stl",
+        "triangles": 5192,
+        "sha256": "709593807021012e06b8bee9dbd2d6e396087ab391fb49f8ed13a1dcdaed2ebb",
+        "bbox_m": {
+          "min": [
+            -0.015997120721000558,
+            -0.12900000000000006,
+            -0.0489995701398503
+          ],
+          "max": [
+            0.015997120721000548,
+            0.12900000000000023,
+            -0.017000429860149716
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/base_link/metal.stl",
+        "triangles": 22008,
+        "sha256": "99766169732566aef176525c3d77a83cf1052f291c62b698426f99c8f2dba107",
+        "bbox_m": {
+          "min": [
+            -0.34,
+            -0.22280000000000003,
+            -0.05099951640733158
+          ],
+          "max": [
+            0.06,
+            0.22280000000000025,
+            0.14
+          ]
+        }
+      }
+    },
+    "camera_link": {
+      "optic": {
+        "path": "meshes/visual/camera_link/optic.stl",
+        "triangles": 2800,
+        "sha256": "784f1b95d85a4443dd693d85a835fb3dd579e3e4d279d5423340f81fea75e275",
+        "bbox_m": {
+          "min": [
+            -5.062616992290714e-16,
+            -0.03699919020278145,
+            -0.004499879101832903
+          ],
+          "max": [
+            6.000000000000672e-05,
+            0.03524950512392198,
+            0.0044998791018328885
+          ]
+        }
+      },
+      "rubber": {
+        "path": "meshes/visual/camera_link/rubber.stl",
+        "triangles": 10644,
+        "sha256": "854709cb6e9677eeb080d0950cb3bd967957436efb96d97337c7f78cf99e1af9",
+        "bbox_m": {
+          "min": [
+            -0.06805000000000003,
+            0.045,
+            -0.004
+          ],
+          "max": [
+            -0.009550000000000001,
+            0.12249999999999961,
+            0.004
+          ]
+        }
+      },
+      "sensor": {
+        "path": "meshes/visual/camera_link/sensor.stl",
+        "triangles": 2548,
+        "sha256": "5d081230240a2158f0ffd650214032644012de486909a7168790034aa5c16432",
+        "bbox_m": {
+          "min": [
+            -0.025050000000000048,
+            -0.04500000000000006,
+            -0.012500000000000042
+          ],
+          "max": [
+            8.881784197001253e-19,
+            0.045000000000000116,
+            0.0125
+          ]
+        }
+      }
+    },
+    "cargo_module": {
+      "bracket": {
+        "path": "meshes/visual/cargo_module/bracket.stl",
+        "triangles": 2080,
+        "sha256": "8e17451c4b452fda818d89081c37ae6ecb374e979a3892ffb3201c233fba481a",
+        "bbox_m": {
+          "min": [
+            -0.20200000000000018,
+            -0.22,
+            0.0
+          ],
+          "max": [
+            0.202,
+            0.22,
+            0.197
+          ]
+        }
+      },
+      "cover": {
+        "path": "meshes/visual/cargo_module/cover.stl",
+        "triangles": 328,
+        "sha256": "5559d27a702881c4b6457d9e2c2e6f9c4ec99e7c18bf3a05ff81a2b207277521",
+        "bbox_m": {
+          "min": [
+            -0.198,
+            -0.215,
+            0.2
+          ],
+          "max": [
+            0.198,
+            0.21500000000000016,
+            0.27
+          ]
+        }
+      },
+      "deck": {
+        "path": "meshes/visual/cargo_module/deck.stl",
+        "triangles": 556,
+        "sha256": "a5a5d0f4ca86740aaaa1906550076260dcc77c71b459a0a6b4d978da9857f8c4",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            0.19699999999999984
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.20000000000000012
+          ]
+        }
+      },
+      "fastener": {
+        "path": "meshes/visual/cargo_module/fastener.stl",
+        "triangles": 75664,
+        "sha256": "5284f1bfeec391671a0e607812406e14f0feb462040079ec027dc8c9168d878b",
+        "bbox_m": {
+          "min": [
+            -0.20440000000000028,
+            -0.21375,
+            0.0029999999999999146
+          ],
+          "max": [
+            0.2044,
+            0.21375000000000005,
+            0.20240000000000027
+          ]
+        }
+      },
+      "hub": {
+        "path": "meshes/visual/cargo_module/hub.stl",
+        "triangles": 11040,
+        "sha256": "157c94c8baf8d636b59f011a7222858da4da1b504c27f4625aabd128df9baba5",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            0.1999999999999999
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.2900000000000002
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/cargo_module/metal.stl",
+        "triangles": 10420,
+        "sha256": "7dda5b145d57097d7a7d53245b3369673b52db605759499c247c6976a3e2dbbf",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            -0.0030000000000000855
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.19700000000000012
+          ]
+        }
+      }
+    },
+    "display_module": {
+      "bracket": {
+        "path": "meshes/visual/display_module/bracket.stl",
+        "triangles": 2080,
+        "sha256": "8e17451c4b452fda818d89081c37ae6ecb374e979a3892ffb3201c233fba481a",
+        "bbox_m": {
+          "min": [
+            -0.20200000000000018,
+            -0.22,
+            0.0
+          ],
+          "max": [
+            0.202,
+            0.22,
+            0.197
+          ]
+        }
+      },
+      "deck": {
+        "path": "meshes/visual/display_module/deck.stl",
+        "triangles": 556,
+        "sha256": "a5a5d0f4ca86740aaaa1906550076260dcc77c71b459a0a6b4d978da9857f8c4",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            0.19699999999999984
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.20000000000000012
+          ]
+        }
+      },
+      "display": {
+        "path": "meshes/visual/display_module/display.stl",
+        "triangles": 108,
+        "sha256": "c9db7b1c47af2d37a753d765a5b62b3f4996a4092c22f57add1e3894886a866b",
+        "bbox_m": {
+          "min": [
+            -0.10713227268861159,
+            -0.16,
+            0.33471339837883773
+          ],
+          "max": [
+            -0.03411809548974793,
+            0.16,
+            0.5335925826289069
+          ]
+        }
+      },
+      "fastener": {
+        "path": "meshes/visual/display_module/fastener.stl",
+        "triangles": 75664,
+        "sha256": "5284f1bfeec391671a0e607812406e14f0feb462040079ec027dc8c9168d878b",
+        "bbox_m": {
+          "min": [
+            -0.20440000000000028,
+            -0.21375,
+            0.0029999999999999146
+          ],
+          "max": [
+            0.2044,
+            0.21375000000000005,
+            0.20240000000000027
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/display_module/metal.stl",
+        "triangles": 17544,
+        "sha256": "6e499808fbfb9ec9b7b591694ab9aa1be695add11188bdce5b478aa05c04ea3f",
+        "bbox_m": {
+          "min": [
+            -0.2,
+            -0.22,
+            -0.0030000000000000855
+          ],
+          "max": [
+            0.2,
+            0.22,
+            0.46700000000000025
+          ]
+        }
+      },
+      "screen": {
+        "path": "meshes/visual/display_module/screen.stl",
+        "triangles": 12,
+        "sha256": "89c775d0341755d1a8c0506839a29a57a2e04078de880ed299265f14691683cb",
+        "bbox_m": {
+          "min": [
+            -0.08391438185433236,
+            -0.1468,
+            0.3527694097104551
+          ],
+          "max": [
+            -0.037534506885101196,
+            0.1468,
+            0.5208423617218911
+          ]
+        }
+      },
+      "screen_card": {
+        "path": "meshes/visual/display_module/screen_card.stl",
+        "triangles": 36,
+        "sha256": "23e38b5293b5eeb90a3c32bd1085e08791823685ce2ad94b58c197b3f17e11a0",
+        "bbox_m": {
+          "min": [
+            -0.0623293714059227,
+            -0.126,
+            0.380010376248945
+          ],
+          "max": [
+            -0.04453649117369347,
+            0.116,
+            0.44574509624562214
+          ]
+        }
+      },
+      "screen_text": {
+        "path": "meshes/visual/display_module/screen_text.stl",
+        "triangles": 60,
+        "sha256": "c308ffb1a0c74c0b43fa9920396bda5c6f079cbb4be3e6b6c09c7e610287c82d",
+        "bbox_m": {
+          "min": [
+            -0.07449386652574116,
+            -0.12600000000000003,
+            0.39648287910487967
+          ],
+          "max": [
+            -0.04874322977517849,
+            0.105,
+            0.4911436100812083
+          ]
+        }
+      }
+    },
+    "left_caster_swivel_link": {
+      "fastener": {
+        "path": "meshes/visual/left_caster_swivel_link/fastener.stl",
+        "triangles": 2792,
+        "sha256": "767daa336588eb62db159629304dfd64ff6837cbc02112ccb39060ed4d1e575c",
+        "bbox_m": {
+          "min": [
+            -0.04200000000000006,
+            -0.026500000000000173,
+            -0.07100000000000002
+          ],
+          "max": [
+            -0.026000000000000002,
+            0.026500000000000173,
+            -0.05499999999999999
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/left_caster_swivel_link/metal.stl",
+        "triangles": 10492,
+        "sha256": "8200ee8e7619756f8b03f9618c84af8d465977626be722e92a48da92b2879650",
+        "bbox_m": {
+          "min": [
+            -0.045,
+            -0.0265,
+            -0.07500000000000001
+          ],
+          "max": [
+            0.0265,
+            0.026500000000000058,
+            3.552713678800501e-18
+          ]
+        }
+      }
+    },
+    "left_caster_wheel_link": {
+      "hub": {
+        "path": "meshes/visual/left_caster_wheel_link/hub.stl",
+        "triangles": 22004,
+        "sha256": "35404c160ef3d179307185d1e382735f15cdf2c466305033b753b82848f4a242",
+        "bbox_m": {
+          "min": [
+            -0.026000000000000002,
+            -0.015500000000000172,
+            -0.02600000000000003
+          ],
+          "max": [
+            0.026000000000000058,
+            0.015500000000000227,
+            0.026000000000000002
+          ]
+        }
+      },
+      "rubber": {
+        "path": "meshes/visual/left_caster_wheel_link/rubber.stl",
+        "triangles": 4362,
+        "sha256": "35815bd1bbd247d0882e22bd88e67e6aad7ef015cfd106f664360aa2dd745642",
+        "bbox_m": {
+          "min": [
+            -0.037999999999999944,
+            -0.0165,
+            -0.038
+          ],
+          "max": [
+            0.037999999999999944,
+            0.0165,
+            0.038000000000000055
+          ]
+        }
+      }
+    },
+    "left_wheel_link": {
+      "hub": {
+        "path": "meshes/visual/left_wheel_link/hub.stl",
+        "triangles": 6620,
+        "sha256": "74fbfb25d5474091e88c9894632da1829a87fba55b1f8b4771fc214eefeb8006",
+        "bbox_m": {
+          "min": [
+            -0.05300000000000001,
+            -0.010500000000000228,
+            -0.053
+          ],
+          "max": [
+            0.053,
+            0.010500000000000285,
+            0.053
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/left_wheel_link/metal.stl",
+        "triangles": 11524,
+        "sha256": "71bca25c787cfb2c8f4e643987f75d2d81191b4f5e4042548990d51f27cd9769",
+        "bbox_m": {
+          "min": [
+            -0.009000000000000015,
+            -0.01900000000000017,
+            -0.009000000000000008
+          ],
+          "max": [
+            0.009000000000000008,
+            0.010500000000000285,
+            0.009000000000000005
+          ]
+        }
+      },
+      "rubber": {
+        "path": "meshes/visual/left_wheel_link/rubber.stl",
+        "triangles": 5412,
+        "sha256": "560e1bcbc98fafd971307d1b9fa21704fec5b0012b0214f702449c666ce1c3fd",
+        "bbox_m": {
+          "min": [
+            -0.068,
+            -0.012,
+            -0.068
+          ],
+          "max": [
+            0.068,
+            0.012,
+            0.06800000000000002
+          ]
+        }
+      }
+    },
+    "lidar_link": {
+      "optic": {
+        "path": "meshes/visual/lidar_link/optic.stl",
+        "triangles": 2044,
+        "sha256": "0437ab48e3cf3900b12e09860adfb5a82497198d2734afbe8202478d60e65f70",
+        "bbox_m": {
+          "min": [
+            -0.03624902609809828,
+            -0.03624347663351685,
+            0.01959999999999991
+          ],
+          "max": [
+            0.03624902609809834,
+            0.03624347663351694,
+            0.04100000000000011
+          ]
+        }
+      },
+      "rubber": {
+        "path": "meshes/visual/lidar_link/rubber.stl",
+        "triangles": 11048,
+        "sha256": "eb728582678d01a9c0fc6a8ceed6fb57bb0f308a6699821d971e3407aa5ce488",
+        "bbox_m": {
+          "min": [
+            0.037999999999999916,
+            -0.0020000000000000287,
+            -0.021000000000000255
+          ],
+          "max": [
+            0.056000000000000175,
+            0.0020000000000000287,
+            0.0045000000000000005
+          ]
+        }
+      },
+      "sensor": {
+        "path": "meshes/visual/lidar_link/sensor.stl",
+        "triangles": 3396,
+        "sha256": "da3ffa07f2dc0f5b731ba5e515c5c483e3114d23357c3122de317a56b76429e1",
+        "bbox_m": {
+          "min": [
+            -0.037998979082144585,
+            -0.03799316171237638,
+            -8.526512829121202e-17
+          ],
+          "max": [
+            0.037998979082144474,
+            0.03799316171237643,
+            0.01960000000000005
+          ]
+        }
+      }
+    },
+    "right_caster_swivel_link": {
+      "fastener": {
+        "path": "meshes/visual/right_caster_swivel_link/fastener.stl",
+        "triangles": 2792,
+        "sha256": "9ee2c6ea78e8c86983a4daf0872d544561e50e41873bde33bc24fbdeb19d48d7",
+        "bbox_m": {
+          "min": [
+            -0.04200000000000006,
+            -0.026500000000000013,
+            -0.07100000000000002
+          ],
+          "max": [
+            -0.025999999999999943,
+            0.026500000000000044,
+            -0.055
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/right_caster_swivel_link/metal.stl",
+        "triangles": 10492,
+        "sha256": "35a0cbfe5a73b007b104a3e4d886fec5d01fa3e08595754d770878f4cd548683",
+        "bbox_m": {
+          "min": [
+            -0.045,
+            -0.0265,
+            -0.07500000000000001
+          ],
+          "max": [
+            0.0265,
+            0.0265,
+            0.0
+          ]
+        }
+      }
+    },
+    "right_caster_wheel_link": {
+      "hub": {
+        "path": "meshes/visual/right_caster_wheel_link/hub.stl",
+        "triangles": 22004,
+        "sha256": "f264469b0f3876e396132fd36be8edc062c178501aad7fb3a1944f62f2a9c446",
+        "bbox_m": {
+          "min": [
+            -0.026000000000000058,
+            -0.01550000000000003,
+            -0.026000000000000002
+          ],
+          "max": [
+            0.026000000000000002,
+            0.015500000000000043,
+            0.026000000000000002
+          ]
+        }
+      },
+      "rubber": {
+        "path": "meshes/visual/right_caster_wheel_link/rubber.stl",
+        "triangles": 4362,
+        "sha256": "35815bd1bbd247d0882e22bd88e67e6aad7ef015cfd106f664360aa2dd745642",
+        "bbox_m": {
+          "min": [
+            -0.037999999999999944,
+            -0.01650000000000003,
+            -0.038
+          ],
+          "max": [
+            0.037999999999999944,
+            0.01650000000000003,
+            0.038000000000000055
+          ]
+        }
+      }
+    },
+    "right_wheel_link": {
+      "hub": {
+        "path": "meshes/visual/right_wheel_link/hub.stl",
+        "triangles": 6620,
+        "sha256": "da1571598e313306a1c1cc9a490947bd960293abb8bbb347d24a0307ebd6bec4",
+        "bbox_m": {
+          "min": [
+            -0.05300000000000001,
+            -0.010500000000000021,
+            -0.05300000000000001
+          ],
+          "max": [
+            0.053,
+            0.010500000000000006,
+            0.053
+          ]
+        }
+      },
+      "metal": {
+        "path": "meshes/visual/right_wheel_link/metal.stl",
+        "triangles": 11524,
+        "sha256": "3cefca88094bf1de2310ac635ac38b648bdd74afdbcad4123833b80ab2c946f5",
+        "bbox_m": {
+          "min": [
+            -0.009000000000000001,
+            -0.010500000000000015,
+            -0.009000000000000001
+          ],
+          "max": [
+            0.009000000000000001,
+            0.019,
+            0.009000000000000005
+          ]
+        }
+      },
+      "rubber": {
+        "path": "meshes/visual/right_wheel_link/rubber.stl",
+        "triangles": 5412,
+        "sha256": "79d49f24b376dcaffbc4355a2ff614d04a406154a41595cb8788a935c6e3f341",
+        "bbox_m": {
+          "min": [
+            -0.068,
+            -0.012000000000000007,
+            -0.068
+          ],
+          "max": [
+            0.068,
+            0.012000000000000005,
+            0.06800000000000002
+          ]
+        }
+      }
+    }
+  }
+}

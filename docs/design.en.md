@@ -1,6 +1,6 @@
 # Printed part design specifications
 
-[English README](../README.en.md) · [File index](parts.en.md) · [한국어](design.ko.md)
+[English README](../README.en.md) · [File index](parts.en.md) · [한국어](design.ko.md) · [ROS models](ros.en.md)
 
 This document covers printed geometry, mounting holes, fasteners, and electronics tray layout. Dimensions are in mm; individual CAD files may use local coordinates different from the [complete model coordinates](full-model.en.md#base-platform).
 

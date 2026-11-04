@@ -6,9 +6,9 @@ SPDX-License-Identifier: CERN-OHL-P-2.0
 
 Source location: <https://github.com/Leehyunbin0131/Oh-My-MobileRobot>
 
-Original CAD, printable geometry, drawings, and documentation in this repository are made available as Covered Source under the CERN Open Hardware Licence Version 2 — Permissive. The complete, unmodified license text is in [LICENSE](LICENSE). The Covered Source and resulting products are provided as described in the license's disclaimer of warranty and liability.
+Original CAD, printable geometry, ROS descriptions and CAD-derived meshes, conversion tools, drawings, and documentation in this repository are made available as Covered Source under the CERN Open Hardware Licence Version 2 — Permissive. The complete, unmodified license text is in [LICENSE](LICENSE). The Covered Source and resulting products are provided as described in the license's disclaimer of warranty and liability.
 
-이 저장소의 원본 CAD, 출력 형상, 도면, 문서에는 CERN-OHL-P-2.0을 적용합니다. 전체 라이선스 원문은 [LICENSE](LICENSE)에 있습니다. 설계와 이를 이용한 제품에는 해당 라이선스의 보증 부인 및 책임 제한 조항이 적용됩니다.
+이 저장소의 원본 CAD, 출력 형상, ROS 모델과 CAD 기반 메시, 변환 도구, 도면, 문서에는 CERN-OHL-P-2.0을 적용합니다. 전체 라이선스 원문은 [LICENSE](LICENSE)에 있습니다. 설계와 이를 이용한 제품에는 해당 라이선스의 보증 부인 및 책임 제한 조항이 적용됩니다.
 
 Product names identify compatible components. This project is not endorsed by SLAMTEC, RealSense, Arduino, AMASS, CERN, or other referenced manufacturers. Manufacturer datasheets are not redistributed here. Reference envelopes are simplified placement geometry, not manufacturer production CAD.
 

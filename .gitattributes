@@ -3,6 +3,14 @@
 *.py text eol=lf
 *.json text eol=lf
 *.csv text eol=lf
+*.urdf text eol=lf
+*.xacro text eol=lf
+*.xml text eol=lf
+*.yaml text eol=lf
+*.rviz text eol=lf
+*.launch text eol=lf
+*.txt text eol=lf
+CMakeLists.txt text eol=lf
 *.stl binary
 *.sc binary
 *.step binary

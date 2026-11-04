@@ -6,7 +6,7 @@
 
 Oh My MobileRobot is a mobile robot hardware project with a 2020 aluminum extrusion frame, drive wheels, rear casters, and 3D printed deck panels, covers, and sensor mounts.
 
-This repository provides exterior models of the base and application concepts, part design files, printable STLs, and drawings. Component placement, mounting methods, and upper modules can be adapted around the base frame to suit the application.
+This repository provides CAD and ROS models of the base and application concepts, part design files, printable STLs, and drawings. Component placement, mounting methods, and upper modules can be adapted around the base frame to suit the application.
 
 ## Base platform
 
@@ -50,17 +50,24 @@ The three concepts combine application modules with a **shared third-level platf
 
 See the [complete model document](docs/full-model.en.md#application-concepts) for post and upper-frame construction and layout dimensions.
 
-## Design resources
+## ROS and ROS 2 models
+
+The base and three application concepts are also available as **URDFs, a common Xacro, and visual meshes**. The models contain drive-wheel and caster joints and LiDAR and camera frames, with ROS 1 and ROS 2 launch files for viewing in RViz.
+
+See [ROS and ROS 2 model usage](docs/ros.en.md) for package installation, model selection, coordinate conventions, and connecting real joint states.
+
+## Documents and files
 
 | Document | Contents |
 | --- | --- |
 | [Complete model structure and layout](docs/full-model.en.md) | Exterior views, coordinate system, component positions, and extension structures |
-| [Design file index](docs/parts.en.md) | Part SolidCraft, STEP, STL, and drawing downloads, plus source file contents |
+| [Design file index](docs/parts.en.md) | CAD, STL, drawing, and ROS package downloads, plus source file contents |
 | [Printed part design specifications](docs/design.en.md) | Panel dimensions, mounting holes, fasteners, and electronics tray layout |
 | [Purchased component specifications](docs/components.en.md) | Purchased component models, quantities, and product dimensions |
 | [Printing instructions](docs/printing.en.md) | STL orientations, fit coupon usage, and PDF print settings |
+| [ROS and ROS 2 model usage](docs/ros.en.md) | Package build and launch, model selection, TF frames, and regeneration |
 | [Design references](docs/references.md) | Manufacturer data, product drawings, and project dimension sources |
 
 ## License
 
-Original CAD, printable geometry, drawings, and documentation are available under [CERN-OHL-P-2.0](LICENSE). See [NOTICE](NOTICE.md) for attribution and scope.
+Original CAD, printable geometry, ROS models and conversion tools, drawings, and documentation are available under [CERN-OHL-P-2.0](LICENSE). See [NOTICE](NOTICE.md) for attribution and scope.

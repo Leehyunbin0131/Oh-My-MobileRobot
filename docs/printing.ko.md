@@ -2,7 +2,7 @@
 
 [한국어 README](../README.md) · [English](printing.en.md) · [파일 목록](parts.ko.md)
 
-STL의 출력 방향·슬라이서 설정과 PDF 도면의 인쇄 방법을 설명합니다. STL 단위는 mm이며 배율은 100%입니다. 파일 형식과 다운로드는 [설계 파일 목록](parts.ko.md#file-formats)에 있습니다.
+`hardware/` 아래 각 부품의 `print/` 폴더에 있는 STL의 출력 방향·슬라이서 설정과 PDF 도면의 인쇄 방법을 설명합니다. 출력용 STL 단위는 mm이며 배율은 100%입니다. ROS 시각화용 m 단위 메시는 [ROS 모델 파일](parts.ko.md#ros-models)로 구분됩니다. 파일 형식과 다운로드는 [설계 파일 목록](parts.ko.md#file-formats)에 있습니다.
 
 <a id="orientation"></a>
 

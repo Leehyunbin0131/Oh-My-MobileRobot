@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>oh_my_mobilerobot_description</name>
+  <version>0.1.0</version>
+  <description>CAD-derived mobile robot visual models, kinematic frames, and ROS 1/ROS 2 display launchers.</description>
+  <maintainer email="Leehyunbin0131@users.noreply.github.com">Leehyunbin0131</maintainer>
+  <license>CERN-OHL-P-2.0</license>
+  <url type="website">https://github.com/Leehyunbin0131/Oh-My-MobileRobot</url>
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">roslaunch</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">rviz</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">ament_index_python</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">launch_ros</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <export>
+    <architecture_independent/>
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export>
+</package>

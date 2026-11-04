@@ -1,6 +1,6 @@
 # Complete model structure and layout
 
-[Overall view](../README.en.md) · [한국어](full-model.ko.md) · [Files](parts.en.md)
+[Overall view](../README.en.md) · [한국어](full-model.ko.md) · [Files](parts.en.md) · [ROS models](ros.en.md)
 
 This document covers the complete model's exterior, coordinates, mounting positions, and extension structures. Product dimensions are in [purchased component specifications](components.en.md); printed interfaces are in [design specifications](design.en.md).
 
@@ -10,7 +10,7 @@ This document covers the complete model's exterior, coordinates, mounting positi
 
 This **exterior reference model** combines the frame and covers with drive wheels, motors, brackets, and two rear casters. Raised corner posts above the deck and internal electronics are omitted. The 2020 extrusion frame measures 440 × 400 × 140 mm including extrusions, with 140 mm vertical corner members.
 
-Units are mm: Y=0 is the front edge of the frame on the D435i side, X=0 is the left frame edge, and Z=0 is the underside of the base frame.
+This document uses CAD coordinates in mm: Y=0 is the front edge of the frame on the D435i side, X=0 is the left frame edge, and Z=0 is the underside of the base frame. See [ROS frames](ros.en.md#frames) for unit conversion and link coordinates of the same exterior geometry.
 
 <a id="layout"></a>
 
@@ -58,4 +58,4 @@ The arm is a static exterior model of an industrial-style six-axis arm. Its join
 
 Wheel spokes, hubs, motor sections, and caster forks are simplified for the exterior view. Fasteners mainly represent their heads, and screen graphics are placeholders.
 
-[Complete model files](parts.en.md#assembly-models) · [Design references](references.md)
+[Complete CAD files](parts.en.md#assembly-models) · [ROS model files](parts.en.md#ros-models) · [Design references](references.md)

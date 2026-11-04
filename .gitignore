@@ -11,3 +11,8 @@ Thumbs.db
 *.gcode
 *.gcode.3mf
 local/
+/build/
+/devel/
+/install/
+/log/
+/.catkin_tools/

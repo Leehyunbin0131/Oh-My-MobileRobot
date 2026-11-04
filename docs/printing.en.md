@@ -2,7 +2,7 @@
 
 [English README](../README.en.md) · [한국어](printing.ko.md) · [File index](parts.en.md)
 
-This document covers STL orientations, slicer settings, and PDF drawing print settings. STL units are mm and the intended scale is 100%. File formats and downloads are in the [design file index](parts.en.md#file-formats).
+This document covers orientations and slicer settings for STLs in each part's `print/` folder under `hardware/`, plus PDF drawing print settings. Printable STLs use mm at 100% scale. Metre-scale visual meshes are listed separately under [ROS model files](parts.en.md#ros-models). File formats and downloads are in the [design file index](parts.en.md#file-formats).
 
 <a id="orientation"></a>
 

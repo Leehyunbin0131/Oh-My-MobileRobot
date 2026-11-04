@@ -1,6 +1,6 @@
 # 출력 부품 설계 규격
 
-[한국어 README](../README.md) · [파일 목록](parts.ko.md) · [English](design.en.md)
+[한국어 README](../README.md) · [파일 목록](parts.ko.md) · [English](design.en.md) · [ROS 모델](ros.ko.md)
 
 출력 부품의 형상·장착홀·체결부와 전장판 배치를 설명합니다. 치수는 mm이며, 개별 CAD의 로컬 좌표는 [전체 모델 좌표](full-model.ko.md#base-platform)와 다를 수 있습니다.
 

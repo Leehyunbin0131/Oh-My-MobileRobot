@@ -1,6 +1,6 @@
 # 구매 부품 사양
 
-[한국어 README](../README.md) · [English](components.en.md) · [자료 출처](references.md)
+[한국어 README](../README.md) · [English](components.en.md) · [자료 출처](references.md) · [ROS 모델](ros.ko.md)
 
 구매 부품의 모델·수량·제품 규격을 설명합니다. 치수는 mm입니다. 프레임 내 장착 위치는 [전체 모델 배치](full-model.ko.md#layout), 기판 고정홀과 전장판 배치는 [출력 부품 설계 규격](design.ko.md#electronics-trays)에 있습니다.
 

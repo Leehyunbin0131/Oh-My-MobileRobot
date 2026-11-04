@@ -1,0 +1,4 @@
+xacro==2.1.1
+urdf-parser-py==0.0.4
+catkin-pkg==1.1.1
+PyYAML==6.0.3
