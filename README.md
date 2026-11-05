@@ -47,7 +47,9 @@
 
 ### 주행 영상
 
-[▶ 실물 로봇 주행 영상 보기](docs/videos/robot-driving.mp4) · MP4 · 29초 · 약 8.3 MB
+https://github.com/user-attachments/assets/bb98cf7c-ee6c-49f0-b458-9154ca7bda5a
+
+[MP4 다운로드](docs/videos/robot-driving.mp4) · 29초 · 약 8.3 MB
 
 ## 기본 베이스
 

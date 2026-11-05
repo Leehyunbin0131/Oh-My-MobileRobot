@@ -47,7 +47,9 @@ The photographs show the earlier deck with round holes. The current design files
 
 ### Driving video
 
-[▶ Watch the robot driving](docs/videos/robot-driving.mp4) · MP4 · 29 seconds · approximately 8.3 MB
+https://github.com/user-attachments/assets/bb98cf7c-ee6c-49f0-b458-9154ca7bda5a
+
+[Download MP4](docs/videos/robot-driving.mp4) · 29 seconds · approximately 8.3 MB
 
 ## Base platform
 
