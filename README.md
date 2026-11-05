@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="#completed-robot">완성 사진</a> ·
+  <a href="#robot-video">주행 영상</a> ·
   <a href="docs/full-model.ko.md">전체 형상</a> ·
   <a href="docs/parts.ko.md">CAD · STL</a> ·
   <a href="docs/ros.ko.md">ROS · ROS 2</a> ·
@@ -41,6 +42,12 @@
 | ![완성 로봇의 전면 사시 사진](docs/images/photos/completed-angle.jpg) | ![완성 로봇의 측면과 상판 사진](docs/images/photos/completed-side.jpg) |
 
 사진은 기존 원형 홀 상판이며, 현재 설계 파일은 T너트 삽입 키홀과 프레임 체결 16개를 적용한 상판입니다.
+
+<a id="robot-video"></a>
+
+### 주행 영상
+
+[▶ 실물 로봇 주행 영상 보기](docs/videos/robot-driving.mp4) · MP4 · 29초 · 약 8.3 MB
 
 ## 기본 베이스
 

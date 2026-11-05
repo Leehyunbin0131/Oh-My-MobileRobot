@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="#completed-robot">Photos</a> ·
+  <a href="#robot-video">Video</a> ·
   <a href="docs/full-model.en.md">Full model</a> ·
   <a href="docs/parts.en.md">CAD · STL</a> ·
   <a href="docs/ros.en.md">ROS · ROS 2</a> ·
@@ -41,6 +42,12 @@ This repository provides CAD and ROS models of the base and application concepts
 | ![Front perspective photograph of the completed robot](docs/images/photos/completed-angle.jpg) | ![Side and top-deck photograph of the completed robot](docs/images/photos/completed-side.jpg) |
 
 The photographs show the earlier deck with round holes. The current design files use T-nut insertion keyholes and 16 frame fasteners.
+
+<a id="robot-video"></a>
+
+### Driving video
+
+[▶ Watch the robot driving](docs/videos/robot-driving.mp4) · MP4 · 29 seconds · approximately 8.3 MB
 
 ## Base platform
 
