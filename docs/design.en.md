@@ -1,6 +1,6 @@
 # Printed part design specifications
 
-[English README](../README.en.md) · [File index](parts.en.md) · [한국어](design.ko.md) · [ROS models](ros.en.md)
+[English README](../README.en.md) · [한국어](design.ko.md) · [File index](parts.en.md) · [ROS models](ros.en.md)
 
 This document covers printed geometry, mounting holes, fasteners, and electronics tray layout. Dimensions are in mm; individual CAD files may use local coordinates different from the [complete model coordinates](full-model.en.md#base-platform).
 
@@ -8,7 +8,9 @@ This document covers printed geometry, mounting holes, fasteners, and electronic
 
 ## Top deck — A2M12 / XT60
 
-![Underside deck reinforcement](../hardware/top-deck/preview-underside.png)
+| Four-quadrant top layout | Underside reinforcement ribs | Corner XT60 and keyhole detail |
+| :---: | :---: | :---: |
+| ![Top-deck four-quadrant layout](../hardware/top-deck/preview-top.png) | ![Underside deck reinforcement](../hardware/top-deck/preview-underside.png) | ![Corner XT60 opening and keyhole](../hardware/top-deck/preview-xt60.png) |
 
 | Item | Dimension / specification |
 | --- | --- |
@@ -43,6 +45,10 @@ The XT60 openings are for passing standard XT60/XT60H cable connectors lengthwis
 
 ## Side panels
 
+| 200 / 220 mm side panels | 180 mm side panel |
+| :---: | :---: |
+| ![200 and 220 mm side panels](../hardware/side-panels/preview.png) | ![180 mm side panel](../hardware/side-panels/preview-180.png) |
+
 Plain panels measure 200 × 140 or 220 × 140. A 1 mm outer skin and 2 mm inner ribs give a 3 mm maximum thickness, without ventilation openings. The extra 180 mm panel uses the same thickness layout and measures 180 × 140 × 3 maximum.
 
 Each panel has four keyholes for M4 hammer T-nuts. The entry is 14 × 8, the narrow section is 4.5 wide, and the travel between entry and fastening centers is 15. The design reference T-nut envelope is 10 × 6 × 3.5.
@@ -55,7 +61,9 @@ The 200/220 filenames refer to panel length. Two 200 mm panels cover one 400 mm 
 
 ## D435i camera and front panels
 
-![D435i V2 bracket](../hardware/camera-mount/preview-bracket.png)
+| D435i V2 bracket | Front left/right cover opening | USB-C plug and cable clearance |
+| :---: | :---: | :---: |
+| ![D435i V2 bracket](../hardware/camera-mount/preview-bracket.png) | ![Front left and right camera covers](../hardware/camera-mount/preview-panels.png) | ![USB-C cable clearance envelope](../hardware/camera-mount/preview-usb-clearance.png) |
 
 The camera is horizontal and looks straight forward. Its weight is carried by the bracket fastened to the inner face of the upper extrusion, not by the thin front covers.
 
@@ -80,7 +88,9 @@ The 5 mm top plate in the camera drawing is a part-specific reference configurat
 
 ## Electronics trays
 
-![Electronics layout](../hardware/electronics-tray/layout.png)
+| Electronics layout | Lower and upper tray 3D geometry |
+| :---: | :---: |
+| ![Electronics layout](../hardware/electronics-tray/layout.png) | ![Electronics tray 3D geometry](../hardware/electronics-tray/preview.png) |
 
 The lower tray carries the NT-S-DCDM1210 motor driver and Arduino Mega. The upper tray carries two SZH-EKBD-058 modules and one LTC3780 SZH-EK334. The HFI-A9 IMU is installed in the upper-right free area beside Mega in the tray diagram. The diagram indicates the IMU location; the tray CAD has no dedicated mounting holes.
 

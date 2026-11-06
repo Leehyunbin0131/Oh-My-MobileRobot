@@ -71,3 +71,30 @@ The brackets are marketed for 750/755/775/795/895 DC motors and 28/35/42 stepper
 | --- | --- | --- |
 | SZH-EKBD-058 | 2 | Buck module; 60 × 51 × 22 body |
 | LTC3780 SZH-EK334 | 1 | Buck-boost module |
+
+<a id="frame-extrusions"></a>
+
+## Frame members — 2020 aluminum extrusions
+
+CAD reference member counts for the base platform (`440 × 400 × 140`) and shared third-level extension platform. Placement coordinates are in [complete model structure and layout](full-model.en.md).
+
+| Group | Specification | Quantity | Placement and role |
+| --- | --- | --- | --- |
+| Base transverse rails | 2020 extrusion, 400 long | 6 | Four upper/lower front and rear rails, one upper center LiDAR rail, one lower rear caster rail |
+| Base longitudinal rails | 2020 extrusion, 360 long | 4 | Four upper/lower left and right side rails |
+| Base vertical posts | 2020 extrusion, 140 long | 4 | Four outer corner vertical members |
+| Third-level extension posts | 2020 extrusion, 200 long | 4 | Shared corner posts for extension concepts (with four lower angle brackets and four upper triangular gussets) |
+| Third-level upper frame and sheet | 2020 × 400 (3), 2020 × 360 (2), 440 × 400 × 3 aluminum sheet (1) | 1 set | Upper module support platform (the robot arm variant adds two extra cross rails) |
+
+<a id="fasteners-standoffs"></a>
+
+## Fasteners and standoffs
+
+Fastener and standoff quantities for the printed covers, sensor bracket, and electronics trays. Interface dimensions are in [printed part design specifications](design.en.md).
+
+| Component | Specification | Quantity | Application |
+| --- | --- | --- | --- |
+| Extrusion bolts and T-nuts | M4 × 8 bolt + M4 hammer T-nut (10 × 6 × 3.5) | 50 sets | Top deck (16 sets), eight front/side/rear split covers (32 sets, 4 per panel), D435i bracket (2 sets) |
+| Sensor mounting screws | M3 × 6 screw | 6 | RPLIDAR A2M12 mount (4, flat underhead), RealSense D435i mount (2) |
+| Board standoffs | M3 metal PCB standoff, 10 body (5 male thread) | 26 | Lower tray (14 pilot bosses) and upper tray (12 pilot bosses) |
+| Inter-deck standoffs | M3 metal PCB standoff, 40 body | 4 | Two-level electronics tray corner columns (150 × 150 pitch) |

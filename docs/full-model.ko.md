@@ -1,6 +1,6 @@
 # 전체 모델 구성과 배치
 
-[전체 모습](../README.md) · [English](full-model.en.md) · [파일 목록](parts.ko.md) · [ROS 모델](ros.ko.md)
+[한국어 README](../README.md) · [English](full-model.en.md) · [파일 목록](parts.ko.md) · [ROS 모델](ros.ko.md)
 
 전체 모델의 외형·좌표·장착 위치와 확장 구조를 설명합니다. 구매 부품의 제품 치수는 [구매 부품 사양](components.ko.md), 출력 부품의 체결부는 [설계 규격](design.ko.md)에 있습니다.
 

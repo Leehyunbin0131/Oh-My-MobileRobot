@@ -1,6 +1,6 @@
 # 출력 부품 설계 규격
 
-[한국어 README](../README.md) · [파일 목록](parts.ko.md) · [English](design.en.md) · [ROS 모델](ros.ko.md)
+[한국어 README](../README.md) · [English](design.en.md) · [파일 목록](parts.ko.md) · [ROS 모델](ros.ko.md)
 
 출력 부품의 형상·장착홀·체결부와 전장판 배치를 설명합니다. 치수는 mm이며, 개별 CAD의 로컬 좌표는 [전체 모델 좌표](full-model.ko.md#base-platform)와 다를 수 있습니다.
 
@@ -8,7 +8,9 @@
 
 ## 상판 — A2M12 / XT60
 
-![상판 밑면 보강](../hardware/top-deck/preview-underside.png)
+| 상면 4분할 배치 | 밑면 보강 리브 | 모서리 XT60·키홀 상세 |
+| :---: | :---: | :---: |
+| ![상판 상면 4분할 배치](../hardware/top-deck/preview-top.png) | ![상판 밑면 보강](../hardware/top-deck/preview-underside.png) | ![상판 모서리 XT60 및 키홀](../hardware/top-deck/preview-xt60.png) |
 
 | 항목 | 치수 / 규격 |
 | --- | --- |
@@ -43,6 +45,10 @@ XT60 통과구는 일반 XT60/XT60H 케이블 단자를 길이 방향으로 통�
 
 ## 측면 판
 
+| 200 / 220 mm 측면 판 | 180 mm 측면 판 |
+| :---: | :---: |
+| ![200 및 220 mm 측면 판](../hardware/side-panels/preview.png) | ![180 mm 측면 판](../hardware/side-panels/preview-180.png) |
+
 일반 판은 200 × 140 또는 220 × 140입니다. 겉면 1, 안쪽 리브 2로 최대 두께는 3이며, 환기용 관통 구멍은 없습니다. 추가 180 mm 판도 180 × 140 × 최대 3으로 같은 두께 구성을 사용합니다.
 
 각 판에는 M4 해머형 T너트 삽입용 키홀 4개가 있습니다. 삽입구 14 × 8, 좁은 부분 폭 4.5, 삽입 위치와 체결 중심 사이 이동량은 15입니다. 설계 기준 T너트 외형은 10 × 6 × 3.5입니다.
@@ -55,7 +61,9 @@ XT60 통과구는 일반 XT60/XT60H 케이블 단자를 길이 방향으로 통�
 
 ## D435i 카메라와 전면 판
 
-![D435i V2 브라켓](../hardware/camera-mount/preview-bracket.png)
+| D435i V2 브라켓 | 전면 좌·우 커버 개구부 | USB-C 플러그·케이블 여유 공간 |
+| :---: | :---: | :---: |
+| ![D435i V2 브라켓](../hardware/camera-mount/preview-bracket.png) | ![전면 좌우 카메라 커버](../hardware/camera-mount/preview-panels.png) | ![USB-C 케이블 여유 공간](../hardware/camera-mount/preview-usb-clearance.png) |
 
 카메라는 가로로 놓고 렌즈가 전면을 수평으로 향합니다. 카메라 무게는 프로파일 안쪽 면에 체결한 브라켓이 받으며, 얇은 전면 판에는 카메라를 고정하지 않습니다.
 
@@ -80,7 +88,9 @@ XT60 통과구는 일반 XT60/XT60H 케이블 단자를 길이 방향으로 통�
 
 ## 전장판
 
-![전장판 배치](../hardware/electronics-tray/layout.png)
+| 전장판 배치도 | 아래판·위판 3D 형상 |
+| :---: | :---: |
+| ![전장판 배치](../hardware/electronics-tray/layout.png) | ![전장판 3D 형상](../hardware/electronics-tray/preview.png) |
 
 아래판에는 NT-S-DCDM1210 모터 드라이버와 Arduino Mega, 위판에는 SZH-EKBD-058 두 개와 LTC3780 SZH-EK334 한 개의 고정 자리가 있습니다. HFI-A9 IMU는 아래판의 Mega 오른쪽 위 빈 공간에 설치되어 있습니다. 배치도는 IMU의 위치를 나타내며, 전장판 CAD에는 전용 고정홀이 없습니다.
 

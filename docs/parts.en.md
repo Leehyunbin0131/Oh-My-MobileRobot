@@ -1,6 +1,6 @@
 # Design file index
 
-[Overall view](../README.en.md) · [한국어](parts.ko.md) · [Dimensions and fasteners](design.en.md) · [Print orientations](printing.en.md)
+[English README](../README.en.md) · [한국어](parts.ko.md) · [Dimensions and fasteners](design.en.md) · [Print orientations](printing.en.md)
 
 This index covers CAD, printing, and ROS downloads and source file contents. See [printed part design specifications](design.en.md) for dimensions and mounting interfaces, [printing instructions](printing.en.md) for output settings, and [ROS model usage](ros.en.md) for running the models.
 

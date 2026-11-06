@@ -1,6 +1,6 @@
 # Complete model structure and layout
 
-[Overall view](../README.en.md) · [한국어](full-model.ko.md) · [Files](parts.en.md) · [ROS models](ros.en.md)
+[English README](../README.en.md) · [한국어](full-model.ko.md) · [File index](parts.en.md) · [ROS models](ros.en.md)
 
 This document covers the complete model's exterior, coordinates, mounting positions, and extension structures. Product dimensions are in [purchased component specifications](components.en.md); printed interfaces are in [design specifications](design.en.md).
 

@@ -1,6 +1,6 @@
 # 설계 파일 목록
 
-[전체 모습](../README.md) · [English](parts.en.md) · [치수·체결 규격](design.ko.md) · [출력 방향](printing.ko.md)
+[한국어 README](../README.md) · [English](parts.en.md) · [치수·체결 규격](design.ko.md) · [출력 방향](printing.ko.md)
 
 CAD·출력·ROS 파일의 다운로드와 원본 구성을 안내합니다. 치수와 체결부는 [출력 부품 설계 규격](design.ko.md), 출력·인쇄 설정은 [출력·인쇄 방법](printing.ko.md), 모델 실행은 [ROS·ROS 2 모델 사용](ros.ko.md)에 있습니다.
 
