@@ -5,10 +5,11 @@
 <h1 align="center">Oh My MobileRobot</h1>
 
 <p align="center">
-  <em>A mobile robot base and extension modules.</em>
+  <em>Open-source mobile robot hardware and ROS/ROS 2 URDF models built on 2020 aluminum extrusions and 3D-printed enclosures.</em>
 </p>
 
 <p align="center">
+  <a href="#overview">Ecosystem</a> ·
   <a href="#completed-robot">Photos</a> ·
   <a href="#robot-video">Video</a> ·
   <a href="docs/full-model.en.md">Full model</a> ·
@@ -24,9 +25,25 @@
 
 ---
 
-**Oh My MobileRobot** is a mobile robot hardware project with a 2020 aluminum extrusion frame, drive wheels, rear casters, and 3D printed deck panels, covers, and sensor mounts.
+**Oh My MobileRobot** is a modular differential-drive mobile robot hardware and ROS model repository built around a standard 2020 aluminum extrusion frame, rear casters, and 3D-printed deck panels, side covers, and sensor mounts.
 
-This repository provides CAD and ROS models of the base and application concepts, part design files, printable STLs, and drawings. Component placement, mounting methods, and upper modules can be adapted around the base frame to suit the application.
+Key deliverables provided in this repository:
+
+- **Ready-to-Build Mechanical Design**: Source CAD (`.sc`, `.step`), printable **STL** files, **1:1 PDF drawings**, and a complete **Bill of Materials (BOM)** for the split top deck, side covers, camera bracket, and two-tier electronics tray.
+- **Modular Upper Extension Concepts**: Reference designs that mount onto a shared third-level platform above the base (`base`) to build a **cargo carrier (`cargo`)**, **six-axis robot arm (`arm`)**, or **information display (`display`)**.
+- **ROS & ROS 2 Robot Description Package**: Ready-to-run `oh_my_mobilerobot_description` package (URDF, shared Xacro, and visual/collision meshes) for RViz visualization and TF frame setup.
+
+<a id="overview"></a>
+
+## Project Ecosystem
+
+The **Oh My MobileRobot** project is organized into three repositories across hardware, low-level control, and autonomous navigation:
+
+| Layer | Repository | Role & Contents |
+| --- | --- | --- |
+| **1. Hardware & URDF Model** | **`Oh-My-MobileRobot`** *(this repo)* | 2020 extrusion frame, 3D-printed enclosure CAD/STL/drawings, BOM, and ROS 1/2 URDF description |
+| **2. Low-Level Control & Diagnostics** | [`Oh-My-Control`](https://github.com/Leehyunbin0131/Oh-My-Control) | Arduino Mega 1 kHz closed-loop motor PID firmware, motor/IMU calibration, Jetson Orin teleop & terminal TUI diagnostics |
+| **3. Autonomous Navigation (SLAM · Nav2)** | [`Oh_My_SLAM`](https://github.com/Leehyunbin0131/Oh_My_SLAM) | Motor-to-ROS 2 base bridge, Gazebo Harmonic simulation, and real-world 2D SLAM (`slam_toolbox` / `AMCL`) + `Nav2` stack |
 
 <a id="completed-robot"></a>
 
@@ -95,11 +112,18 @@ The three concepts combine application modules with a **shared third-level platf
 
 See the [complete model document](docs/full-model.en.md#application-concepts) for post and upper-frame construction and layout dimensions.
 
-## ROS and ROS 2 models
+## ROS and ROS 2 models (`oh_my_mobilerobot_description`)
 
-The base and three application concepts are also available as **URDFs, a common Xacro, and visual meshes**. The models contain drive-wheel and caster joints and LiDAR and camera frames, with ROS 1 and ROS 2 launch files for viewing in RViz.
+The base (`base`) and three application concepts (`cargo`, `arm`, `display`) are provided as **URDFs, a shared Xacro, and visual/collision meshes** with drive-wheel/caster joints and LiDAR/camera TF frames ready for RViz in both ROS 1 and ROS 2.
 
-See [ROS and ROS 2 model usage](docs/ros.en.md) for package installation, model selection, coordinate conventions, and connecting real joint states.
+```bash
+# Example: build and launch the model in RViz (ROS 2, variant: base | cargo | arm | display)
+colcon build --symlink-install --packages-select oh_my_mobilerobot_description
+source install/setup.bash
+ros2 launch oh_my_mobilerobot_description display.launch.py variant:=base
+```
+
+See [ROS and ROS 2 model usage](docs/ros.en.md) for full installation instructions, coordinate frame definitions (`base_footprint`, `base_link`, sensor frames), and connecting real robot `/joint_states`.
 
 ## Documents and files
 

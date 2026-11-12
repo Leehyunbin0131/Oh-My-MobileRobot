@@ -98,8 +98,8 @@ The lower tray carries the NT-S-DCDM1210 motor driver and Arduino Mega. The uppe
 - M3 standoff holes: Ø2.9 through pilot holes, without threads. A 5 mm male thread has a nominal 1 mm tip allowance within the 6 mm distance from boss top to plate underside.
 - Lower tray: 14 pilot holes/bosses. Upper tray: 12 pilot holes/bosses and four Ø3.4 inter-deck clearance holes.
 - Inter-deck attachment pitch: 150 × 150. Long columns are not printed; metal PCB standoffs join the two trays.
-- SZH-EKBD-058 hole pitch: **53 × 37**, corrected by the user. Heatsink reserve: 60 × 71 each, with 30 between the two modules.
-- LTC3780 hole pitch: **71 × 39**, measured by the user. Clearance to each buck-module heatsink envelope: 10.
+- SZH-EKBD-058 hole pitch: **53 × 37** (measured on actual module). Heatsink reserve: 60 × 71 each, with 30 between the two modules.
+- LTC3780 hole pitch: **71 × 39** (measured on actual module). Clearance to each buck-module heatsink envelope: 10.
 - Mega has the 180° orientation shown in the layout; USB faces local +X.
 - With 40 mm inter-deck standoff bodies, 10 mm PCB standoffs, and a 22 mm upper module height, nominal stack height is 84.
 

@@ -5,10 +5,11 @@
 <h1 align="center">Oh My MobileRobot</h1>
 
 <p align="center">
-  <em>모바일 로봇 베이스와 확장 모듈.</em>
+  <em>2020 알루미늄 프로파일과 3D 프린팅 외장 기반의 오픈소스 모바일 로봇 하드웨어 · URDF 모델</em>
 </p>
 
 <p align="center">
+  <a href="#overview">프로젝트 구성</a> ·
   <a href="#completed-robot">완성 사진</a> ·
   <a href="#robot-video">주행 영상</a> ·
   <a href="docs/full-model.ko.md">전체 형상</a> ·
@@ -24,9 +25,25 @@
 
 ---
 
-**Oh My MobileRobot**은 2020 알루미늄 프로파일 프레임에 구동 바퀴·후방 캐스터와 3D 프린팅 상판·커버·센서 고정부를 결합한 모바일 로봇 하드웨어 프로젝트입니다.
+**Oh My MobileRobot**은 표준 2020 알루미늄 프로파일 프레임에 양륜 차동 구동부, 후방 캐스터, 3D 프린팅 외장·센서 마운트를 결합한 **모바일 로봇 하드웨어 설계 및 ROS 모델 저장소**입니다.
 
-저장소는 기본 베이스와 확장 예시의 CAD·ROS 모델, 부품별 설계 파일, 출력용 STL과 도면을 제공합니다. 베이스 프레임을 기준으로 부품 배치·체결 방식·상부 모듈을 용도에 맞게 변경해 사용할 수 있습니다.
+이 저장소에서 제공하는 핵심 자산은 다음 세 가지입니다.
+
+- **제작 가능한 기구 설계**: 분할 상판·측면 커버·카메라 브라켓·2층 전장판의 **원본 CAD(`.sc`, `.step`)**, **3D 프린팅용 STL**, **1:1 도면(PDF)**, **구매 부품 명세(BOM)**
+- **모듈형 상부 확장 구조**: 기본 베이스(`base`) 위에 공통 3층 플랫폼을 결합해 **적재함(`cargo`)**, **6축 로봇암(`arm`)**, **안내 디스플레이(`display`)**로 확장하는 참조 설계
+- **ROS · ROS 2 로봇 모델**: RViz 시각화와 TF 트리 구성을 바로 실행할 수 있는 `oh_my_mobilerobot_description` 패키지(URDF, 공통 Xacro, 시각화·충돌 메시)
+
+<a id="overview"></a>
+
+## 전체 프로젝트 구성 (Oh My MobileRobot 생태계)
+
+본 로봇 프로젝트는 **기구 설계 → 하위 제어·보정 → 상위 ROS 2 자율주행**의 3단계 저장소로 구성되어 있습니다.
+
+| 단계 | 저장소 | 담당 역할 및 주요 내용 |
+| --- | --- | --- |
+| **1. 하드웨어 · 모델** | **`Oh-My-MobileRobot`** *(현재 저장소)* | 2020 프로파일 프레임, 3D 프린팅 외장 CAD·STL·도면, 구매 부품(BOM), ROS 1/2 URDF 모델 |
+| **2. 하위 제어 · 진단** | [`Oh-My-Control`](https://github.com/Leehyunbin0131/Oh-My-Control) | Arduino Mega 1 kHz 폐루프 모터 제어 펌웨어, 모터 PID·IMU 정지 보정, Jetson Orin 수동 조종 및 터미널 진단(TUI) |
+| **3. 자율주행 (SLAM · Nav2)** | [`Oh_My_SLAM`](https://github.com/Leehyunbin0131/Oh_My_SLAM) | 구동 제어기–ROS 2 브리지, Gazebo 시뮬레이션, 실물 2D SLAM(`slam_toolbox` / `AMCL`) 및 `Nav2` 자율주행 통합 |
 
 <a id="completed-robot"></a>
 
@@ -95,11 +112,18 @@ https://github.com/user-attachments/assets/bb98cf7c-ee6c-49f0-b458-9154ca7bda5a
 
 각 예시의 기둥·상부 프레임 구성과 배치 치수는 [전체 모델 문서](docs/full-model.ko.md#application-concepts)에 있습니다.
 
-## ROS·ROS 2 모델
+## ROS·ROS 2 모델 (`oh_my_mobilerobot_description`)
 
-기본 베이스와 세 확장 예시는 **URDF·공통 Xacro·시각화 메시**로도 제공됩니다. 모델에는 구동 바퀴와 캐스터의 회전 관절, 라이다·카메라 좌표계가 있으며 ROS 1·ROS 2용 실행 파일로 RViz에서 확인할 수 있습니다.
+기본 베이스(`base`)와 세 가지 확장 예시(`cargo`, `arm`, `display`)는 **URDF·공통 Xacro·시각화 메시**로 제공됩니다. 구동 바퀴·캐스터 회전 관절과 라이다·카메라 TF 좌표계가 정의되어 있어 ROS 1 및 ROS 2 환경의 RViz에서 즉시 확인할 수 있습니다.
 
-패키지 설치, 모델 선택, 좌표 기준과 실제 관절 상태 연결은 [ROS·ROS 2 모델 사용](docs/ros.ko.md)에 있습니다.
+```bash
+# ROS 2 워크스페이스에서 RViz 모델 확인 예시 (variant: base | cargo | arm | display)
+colcon build --symlink-install --packages-select oh_my_mobilerobot_description
+source install/setup.bash
+ros2 launch oh_my_mobilerobot_description display.launch.py variant:=base
+```
+
+상세한 패키지 설치, 좌표계 정의(`base_footprint`, `base_link`, 센서 프레임), 실제 로봇 관절 상태(`/joint_states`) 연결 방법은 [ROS·ROS 2 모델 사용](docs/ros.ko.md) 문서를 참고하세요.
 
 ## 문서와 파일
 
