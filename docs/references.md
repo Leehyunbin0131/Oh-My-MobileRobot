@@ -2,7 +2,7 @@
 
 [한국어](../README.md) · [English](../README.en.md)
 
-제조사 자료·제품 도면·프로젝트 실측과 설계 기준의 출처입니다. 실제 규격은 [구매 부품 사양](components.ko.md), 체결부 치수는 [출력 부품 설계 규격](design.ko.md), 조립 모델 좌표는 [전체 모델](full-model.ko.md)에 있습니다.
+제조사 자료, 제품 도면, 프로젝트 실측과 설계 기준의 출처를 정리했습니다. 실제 규격은 [구매 부품 사양](components.ko.md), 체결부 치수는 [출력 부품 설계 규격](design.ko.md), 조립 모델 좌표는 [전체 모델](full-model.ko.md)에 있습니다.
 
 This page identifies manufacturer data, product drawings, project measurements, and design references. Values are documented in [purchased component specifications](components.en.md), [printed part design specifications](design.en.md), and the [complete model layout](full-model.en.md).
 
@@ -22,13 +22,13 @@ This page identifies manufacturer data, product drawings, project measurements, 
 | Jetson Orin Nano Super / HFI-A9 | 시스템 구성 사양 / System hardware specification | 메인 PC·IMU 모델 / Main computer and IMU models |
 | 해머형 T너트 / Hammer T-nut | 프로젝트 설계 참고 외형 / Project design reference envelope | 측면 판 키홀의 기준 외형 / Reference envelope for side-panel keyholes |
 
-출력 부품의 치수에는 제품 규격, 실물 실측값, 설계 여유가 구분되어 있습니다. / Printed part dimensions distinguish product specifications, hardware measurements, and design clearances.
+출력 부품 치수는 제품 규격과 실물 실측값, 설계 여유를 구분해 적었습니다. / Printed part dimensions distinguish product specifications, hardware measurements, and design clearances.
 
 <a id="ros-references"></a>
 
 ## ROS 모델 자료 / ROS model references
 
-ROS 모델의 사용법과 프로젝트 좌표 변환은 [한국어](ros.ko.md) / [English](ros.en.md)에 있습니다. / Usage and project coordinate conversion are documented in the linked ROS pages.
+ROS 모델 사용법과 프로젝트 좌표 변환 방법은 [한국어](ros.ko.md) / [English](ros.en.md)에 있습니다. / Usage and project coordinate conversion are documented in the linked ROS pages.
 
 | 대상 / Item | 출처 / Source | 적용 항목 / Scope |
 | --- | --- | --- |

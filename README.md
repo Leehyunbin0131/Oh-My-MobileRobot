@@ -5,7 +5,7 @@
 <h1 align="center">Oh My MobileRobot</h1>
 
 <p align="center">
-  <em>2020 알루미늄 프로파일과 3D 프린팅 외장 기반의 오픈소스 모바일 로봇 하드웨어 · URDF 모델</em>
+  <em>2020 알루미늄 프로파일과 3D 프린팅 외장으로 만든 오픈소스 모바일 로봇 하드웨어와 URDF 모델</em>
 </p>
 
 <p align="center">
@@ -25,19 +25,19 @@
 
 ---
 
-**Oh My MobileRobot**은 표준 2020 알루미늄 프로파일 프레임에 양륜 차동 구동부, 후방 캐스터, 3D 프린팅 외장·센서 마운트를 결합한 **모바일 로봇 하드웨어 설계 및 ROS 모델 저장소**입니다.
+**Oh My MobileRobot**은 표준 2020 알루미늄 프로파일 프레임에 양륜 차동 구동부와 후방 캐스터, 3D 프린팅 외장과 센서 마운트를 결합한 **모바일 로봇 하드웨어 설계와 ROS 모델 저장소**입니다.
 
-이 저장소에서 제공하는 핵심 자산은 다음 세 가지입니다.
+이 저장소는 세 가지 자료를 제공합니다.
 
-- **제작 가능한 기구 설계**: 분할 상판·측면 커버·카메라 브라켓·2층 전장판의 **원본 CAD(`.sc`, `.step`)**, **3D 프린팅용 STL**, **1:1 도면(PDF)**, **구매 부품 명세(BOM)**
-- **모듈형 상부 확장 구조**: 기본 베이스(`base`) 위에 공통 3층 플랫폼을 결합해 **적재함(`cargo`)**, **6축 로봇암(`arm`)**, **안내 디스플레이(`display`)**로 확장하는 참조 설계
-- **ROS · ROS 2 로봇 모델**: RViz 시각화와 TF 트리 구성을 바로 실행할 수 있는 `oh_my_mobilerobot_description` 패키지(URDF, 공통 Xacro, 시각화·충돌 메시)
+- **제작 가능한 기구 설계**: 분할 상판, 측면 커버, 카메라 브라켓, 2층 전장판의 원본 CAD(`.sc`, `.step`)와 3D 프린팅용 STL, 1:1 도면(PDF), 구매 부품 명세(BOM)
+- **모듈형 상부 확장 구조**: 기본 베이스(`base`) 위에 공통 3층 플랫폼을 결합해 적재함(`cargo`), 6축 로봇암(`arm`), 안내 디스플레이(`display`)로 확장하는 참조 설계
+- **ROS · ROS 2 로봇 모델**: RViz 시각화와 TF 트리 구성을 바로 실행해 볼 수 있는 `oh_my_mobilerobot_description` 패키지(URDF, 공통 Xacro, 시각화·충돌 메시)
 
 <a id="overview"></a>
 
 ## 전체 프로젝트 구성 (Oh My MobileRobot 생태계)
 
-본 로봇 프로젝트는 **기구 설계 → 하위 제어·보정 → 상위 ROS 2 자율주행**의 3단계 저장소로 구성되어 있습니다.
+이 로봇 프로젝트는 **기구 설계 → 하위 제어·보정 → 상위 ROS 2 자율주행**의 3단계 저장소로 나뉩니다.
 
 | 단계 | 저장소 | 담당 역할 및 주요 내용 |
 | --- | --- | --- |
@@ -58,7 +58,7 @@
 | :---: | :---: |
 | ![완성 로봇의 전면 사시 사진](docs/images/photos/completed-angle.jpg) | ![완성 로봇의 측면과 상판 사진](docs/images/photos/completed-side.jpg) |
 
-사진은 기존 원형 홀 상판이며, 현재 설계 파일은 T너트 삽입 키홀과 프레임 체결 16개를 적용한 상판입니다.
+사진 속 상판은 원형 홀을 쓰던 이전 버전입니다. 현재 설계 파일의 상판에는 T너트 삽입 키홀과 프레임 체결 16개가 적용되어 있습니다.
 
 <a id="robot-video"></a>
 
@@ -77,7 +77,7 @@ https://github.com/user-attachments/assets/bb98cf7c-ee6c-49f0-b458-9154ca7bda5a
   <sub>전체 외형 CAD 모델의 렌더링 이미지</sub>
 </p>
 
-프레임은 상·하부 사각 프레임과 모서리 수직 부재로 구성됩니다. 상부 중앙 가로 프로파일에는 라이다 고정부가 연결됩니다. 기본 베이스는 상판 위로 올라오는 네 모서리 기둥이 없는 형태입니다.
+프레임은 상부와 하부의 사각 프레임, 모서리 수직 부재로 이루어집니다. 라이다 고정부는 상부 중앙의 가로 프로파일에 연결됩니다. 기본 베이스에는 상판 위로 올라오는 네 모서리 기둥이 없습니다.
 
 ### 기본 사양
 
@@ -99,22 +99,22 @@ https://github.com/user-attachments/assets/bb98cf7c-ee6c-49f0-b458-9154ca7bda5a
 | IMU | HFI-A9 | 관성 측정 |
 | 전원 변환 | SZH-EKBD-058, LTC3780 SZH-EK334 | DC-DC 전원 변환 |
 
-기구부는 프로파일 프레임에 분할 외장과 센서 브라켓을 결합한 구조입니다. 전장부는 금속 PCB 서포터로 연결된 2층 전장판을 사용합니다.
+기구부는 프로파일 프레임에 분할 외장과 센서 브라켓을 결합한 구조입니다. 전장부에는 금속 PCB 서포터로 연결한 2층 전장판이 들어갑니다.
 
 ## 확장 예시
 
-세 가지 개념 모델은 **라이다 층에서 네 기둥으로 올린 공통 3층 플랫폼**에 용도별 모듈을 결합한 형태입니다.
+세 가지 개념 모델은 모두 **라이다 층에서 네 기둥으로 올린 공통 3층 플랫폼** 위에 용도별 모듈을 결합한 형태입니다.
 
 | 적재함형 | 6축 로봇암형 | 안내 디스플레이형 |
 | :---: | :---: | :---: |
 | ![적재함 확장 예시](docs/images/application-cargo.png) | ![로봇팔 확장 예시](docs/images/application-arm.png) | ![안내 디스플레이 확장 예시](docs/images/application-display.png) |
 | 프로파일 테두리와 판재로 만든 적재 공간 | 산업용 6축암 형태와 두 손가락 그리퍼 | 프로파일 마스트에 고정한 안내 화면 |
 
-각 예시의 기둥·상부 프레임 구성과 배치 치수는 [전체 모델 문서](docs/full-model.ko.md#application-concepts)에 있습니다.
+각 예시의 기둥과 상부 프레임 구성, 배치 치수는 [전체 모델 문서](docs/full-model.ko.md#application-concepts)에 있습니다.
 
 ## ROS·ROS 2 모델 (`oh_my_mobilerobot_description`)
 
-기본 베이스(`base`)와 세 가지 확장 예시(`cargo`, `arm`, `display`)는 **URDF·공통 Xacro·시각화 메시**로 제공됩니다. 구동 바퀴·캐스터 회전 관절과 라이다·카메라 TF 좌표계가 정의되어 있어 ROS 1 및 ROS 2 환경의 RViz에서 즉시 확인할 수 있습니다.
+기본 베이스(`base`)와 세 가지 확장 예시(`cargo`, `arm`, `display`)를 **URDF, 공통 Xacro, 시각화 메시**로 제공합니다. 구동 바퀴와 캐스터의 회전 관절, 라이다와 카메라의 TF 좌표계가 정의되어 있어 ROS 1과 ROS 2 환경의 RViz에서 바로 확인할 수 있습니다.
 
 ```bash
 # ROS 2 워크스페이스에서 RViz 모델 확인 예시 (variant: base | cargo | arm | display)
@@ -123,7 +123,7 @@ source install/setup.bash
 ros2 launch oh_my_mobilerobot_description display.launch.py variant:=base
 ```
 
-상세한 패키지 설치, 좌표계 정의(`base_footprint`, `base_link`, 센서 프레임), 실제 로봇 관절 상태(`/joint_states`) 연결 방법은 [ROS·ROS 2 모델 사용](docs/ros.ko.md) 문서를 참고하세요.
+패키지 설치와 좌표계 정의(`base_footprint`, `base_link`, 센서 프레임), 실제 로봇의 관절 상태(`/joint_states`) 연결 방법은 [ROS·ROS 2 모델 사용](docs/ros.ko.md) 문서를 참고하세요.
 
 ## 문서와 파일
 

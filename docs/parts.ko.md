@@ -2,7 +2,7 @@
 
 [한국어 README](../README.md) · [English](parts.en.md) · [치수·체결 규격](design.ko.md) · [출력 방향](printing.ko.md)
 
-CAD·출력·ROS 파일의 다운로드와 원본 구성을 안내합니다. 치수와 체결부는 [출력 부품 설계 규격](design.ko.md), 출력·인쇄 설정은 [출력·인쇄 방법](printing.ko.md), 모델 실행은 [ROS·ROS 2 모델 사용](ros.ko.md)에 있습니다.
+CAD, 출력, ROS 파일의 다운로드 위치와 원본 구성을 안내합니다. 치수와 체결부는 [출력 부품 설계 규격](design.ko.md), 출력·인쇄 설정은 [출력·인쇄 방법](printing.ko.md), 모델 실행은 [ROS·ROS 2 모델 사용](ros.ko.md)에 있습니다.
 
 <a id="printed-parts"></a>
 
@@ -21,8 +21,8 @@ M3 체결 시험편: [STL 다운로드](../hardware/electronics-tray/print/m3-pi
 
 ### 카메라 원본 파일 구성
 
-- [camera-panels.sc](../hardware/camera-mount/cad/camera-panels.sc): 좌·우 커버의 편집 이력과 숨겨진 초기 브라켓 형상이 포함되어 있으며, 두 커버만 표시됩니다.
-- [d435i-bracket-v2.sc](../hardware/camera-mount/cad/d435i-bracket-v2.sc): 현재 V2 브라켓 원본입니다. 대응하는 출력 파일은 [d435i-bracket-v2.stl](../hardware/camera-mount/print/d435i-bracket-v2.stl)입니다.
+- [camera-panels.sc](../hardware/camera-mount/cad/camera-panels.sc): 좌·우 커버의 편집 이력과 숨겨진 초기 브라켓 형상이 들어 있습니다. 화면에는 두 커버만 표시됩니다.
+- [d435i-bracket-v2.sc](../hardware/camera-mount/cad/d435i-bracket-v2.sc): 현재 V2 브라켓 원본입니다. 짝이 되는 출력 파일은 [d435i-bracket-v2.stl](../hardware/camera-mount/print/d435i-bracket-v2.stl)입니다.
 
 <a id="assembly-models"></a>
 
@@ -41,7 +41,7 @@ M3 체결 시험편: [STL 다운로드](../hardware/electronics-tray/print/m3-pi
 
 ## ROS 모델 파일
 
-[oh_my_mobilerobot_description 패키지](../ros/oh_my_mobilerobot_description)를 전체 다운로드해 사용합니다. URDF는 패키지 안의 메시를 참조합니다.
+[oh_my_mobilerobot_description 패키지](../ros/oh_my_mobilerobot_description)는 폴더 전체를 내려받아 사용합니다. URDF는 패키지 안의 메시를 참조합니다.
 
 | 파일 | 내용 |
 | --- | --- |
@@ -70,4 +70,4 @@ M3 체결 시험편: [STL 다운로드](../hardware/electronics-tray/print/m3-pi
 | `.urdf` | ROS 링크·관절·시각화·충돌 형상 정의 |
 | `.xacro` | 모델 선택·이름 접두사가 있는 공통 URDF 원본 |
 
-출력 대상은 각 부품의 `print/` 폴더에 있는 STL입니다. CAD 원본의 숨겨진 참고 기판·프로파일은 출력 대상이 아닙니다. 전체 외형과 응용 모델은 CAD 편집·교환용 SolidCraft·STEP과 ROS용 URDF·Xacro로 제공합니다. 출력 단위·배율은 [출력·인쇄 방법](printing.ko.md), ROS 단위·좌표는 [ROS 문서](ros.ko.md#frames)에 있습니다.
+출력 대상은 각 부품의 `print/` 폴더에 있는 STL입니다. CAD 원본에 숨겨 둔 참고 기판과 프로파일은 출력 대상이 아닙니다. 전체 외형과 응용 모델은 CAD 편집과 교환을 위한 SolidCraft·STEP 파일, ROS용 URDF·Xacro 파일로 제공합니다. 출력 단위와 배율은 [출력·인쇄 방법](printing.ko.md), ROS 단위와 좌표는 [ROS 문서](ros.ko.md#frames)에 있습니다.
